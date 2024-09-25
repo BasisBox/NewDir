@@ -44,7 +44,7 @@ public static class NewDirectory
     }
     
     /// <summary>
-    /// Creates a new directory with the specified paramaters.
+    /// Creates a new directory with the specified parameters.
     /// </summary>
     /// <param name="directoryPath">The path of the directory to be created.</param>
     /// <param name="unixFileMode">The file mode to use to create the directory. Only used on Unix based systems.</param>
