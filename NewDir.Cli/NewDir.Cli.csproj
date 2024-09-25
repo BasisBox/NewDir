@@ -33,4 +33,10 @@
       <ProjectReference Include="..\NewDir.Library\NewDir.Library.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\COPYING.LESSER">
+        <Link>COPYING.LESSER</Link>
+      </Content>
+    </ItemGroup>
+
 </Project>
