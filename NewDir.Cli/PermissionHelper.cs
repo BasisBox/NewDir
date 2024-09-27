@@ -18,6 +18,8 @@
 using System;
 using System.IO;
 
+using AlastairLundy.Extensions.IO.Permissions;
+
 using NewDir.Cli.Localizations;
 
 namespace NewDir.Cli;
@@ -34,7 +36,7 @@ internal static class PermissionHelper
         }
         else
         {
-            bool isValid = UnixFilePermissionConverter.TryParse(settingsMode, out fileMode);
+            bool isValid = UnixFilePermissionParser.TryParse(settingsMode, out fileMode);
 
             if (!isValid || fileMode == null)
             {

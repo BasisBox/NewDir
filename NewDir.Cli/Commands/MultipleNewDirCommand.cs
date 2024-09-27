@@ -18,10 +18,10 @@
 using System;
 using System.IO;
 
+using AlastairLundy.Extensions.IO.Directories;
+
 using NewDir.Cli.Localizations;
 using NewDir.Cli.Settings;
-
-using NewDir.Library;
 
 using Spectre.Console;
 using Spectre.Console.Cli;
@@ -51,11 +51,13 @@ public partial class MultipleNewDirCommand : Command<MultipleNewDirCommandSettin
 
         try
         {
+            DirectoryCreator directoryCreator = new DirectoryCreator();
+            
             UnixFileMode? fileMode = PermissionHelper.GetUnixFileMode(settings.Mode);
 
             foreach (string directory in settings.DirectoryNames)
             {
-                NewDirectory.Create(directory, (UnixFileMode)fileMode!, settings.CreateParentDirectories);
+                directoryCreator.CreateDirectory(directory,  directory, (UnixFileMode)fileMode!, settings.CreateParentDirectories);
             }
             
             return 0;
