@@ -20,8 +20,6 @@ using System.IO;
 
 using NewDir.Cli.Localizations;
 
-using NewDir.Library;
-
 namespace NewDir.Cli;
 
 internal static class PermissionHelper

@@ -30,10 +30,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\NewDir.Library\NewDir.Library.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Content Include="..\COPYING.LESSER">
         <Link>COPYING.LESSER</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
