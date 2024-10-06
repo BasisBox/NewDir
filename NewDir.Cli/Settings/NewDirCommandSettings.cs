@@ -24,7 +24,6 @@ namespace NewDir.Cli.Settings;
 public class NewDirCommandSettings : CommandSettings 
 {
         [CommandArgument(0, "<directory_name>")]
-        [DefaultValue(null)]
         public string? DirectoryName { get; init; }
         
         [CommandOption("-p|--parents")]

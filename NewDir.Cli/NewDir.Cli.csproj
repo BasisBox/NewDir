@@ -11,7 +11,7 @@
         <PublishSingleFile>true</PublishSingleFile>
         <SelfContained>false</SelfContained>
         <Version>1.1.0</Version>
-        <AssemblyVersion>1.1.0</AssemblyVersion>
+        <AssemblyVersion>1.1.0.1</AssemblyVersion>
         <Title>NewDir</Title>
     </PropertyGroup>
 
