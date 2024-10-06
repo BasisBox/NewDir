@@ -28,7 +28,7 @@ using Spectre.Console.Cli;
 
 namespace NewDir.Cli.Commands;
 
-public partial class NewDirCommand : Command<NewDirCommandSettings>
+public class NewDirCommand : Command<NewDirCommandSettings>
 {
     public override int Execute(CommandContext context, NewDirCommandSettings settings)
     {
