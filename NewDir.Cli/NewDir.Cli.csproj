@@ -12,6 +12,7 @@
         <SelfContained>false</SelfContained>
         <Version>1.1.0</Version>
         <AssemblyVersion>1.1.0</AssemblyVersion>
+        <Title>NewDir</Title>
     </PropertyGroup>
 
     <ItemGroup>
