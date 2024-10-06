@@ -27,7 +27,8 @@ CommandApp app = new();
 
     app.Configure(config =>
     {
-        config.AddCommand<NewDirCommand>("")
+        config.AddCommand<NewDirCommand>("single")
+            .WithAlias("")
             .WithDescription(Resources.Commands_NewDir_Description);
 
         config.AddCommand<MultipleNewDirCommand>("many")
@@ -39,7 +40,7 @@ CommandApp app = new();
         config.UseAssemblyInformationalVersion();
     });
 
-    if (args.Length > 1 && !args.Contains("-"))
+    if (args.Length > 1)
     {
         app.SetDefaultCommand<MultipleNewDirCommand>();
     }

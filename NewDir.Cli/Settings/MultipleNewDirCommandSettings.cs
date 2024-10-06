@@ -25,7 +25,7 @@ namespace NewDir.Cli.Settings;
 public class MultipleNewDirCommandSettings : CommandSettings
 {
         [CommandArgument(0, "<directory_names>")]
-        public IEnumerable<string>? DirectoryNames { get; init; }
+        public string[]? DirectoryNames { get; init; }
         
         [CommandOption("-p|--parents")]
         [DefaultValue(false)]
